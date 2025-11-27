@@ -10,7 +10,8 @@ address = st.selectbox("次の中から現住所を教えてください",["京�
 st.write(address)
 hobby = st.multiselect("趣味を次から複数選択してください",["映画","漫画"])
 st.write(hobby)
-st.slider("この映画を10点満点で評価してください",0,10,0)
+scotre = st.slider("この映画を10点満点で評価してください",0,10,0)
+st.radio("性別を選択してください",["男性","女性"])
 camera = st.camera_input("写真を撮影しますわ")
 if camera:
       st.image(camera, caption="写真", use_column_width=True)
